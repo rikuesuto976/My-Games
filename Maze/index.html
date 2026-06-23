@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Escape</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div style="display: flex; gap: 20px; justify-content: center; align-items: center;">
+        <div id="difficulty">Level: 1 (EASY)</div>
+        <div id="timer">Time: 30</div>
+        <div id="wins">Wins: 0</div>
+    </div>
+    <div id="maze-container">
+        <div id="maze"></div>
+        <div id="player"></div>
+    </div>
+
+    <div id="controls">
+        <button class="control-btn" id="up" onclick="movePlayer('up')"> ↑ </button>
+        <button class="control-btn" id="left" onclick="movePlayer('left')"> ← </button>
+        <button class="control-btn" id="right" onclick="movePlayer('right')"> → </button>
+        <button class="control-btn" id="down" onclick="movePlayer('down')"> ↓ </button>
+    </div>
+
+    <div id="message">
+        <h2 id="message-text"></h2>
+        <button id="try-again" onclick="initGame()">Try Again</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
